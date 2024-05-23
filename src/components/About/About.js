@@ -32,9 +32,9 @@ function About() {
             <br />
 
             <ScrollAnimation animateIn="fadeInLeft">
-              With expertise in React.js, JavaScript, TypeScript, HTML, CSS, and
-              proficient use of Bootstrap and Tailwind CSS, I am adept at
-              creating dynamic and responsive web applications. My goal is to
+              With expertise in React.js, PHP, JavaScript, TypeScript, HTML,
+              CSS, and proficient use of Bootstrap and Tailwind CSS, I am adept
+              at creating dynamic and responsive web applications. My goal is to
               ensure that my projects not only function seamlessly but also
               boast appealing and user-friendly designs.
             </ScrollAnimation>
