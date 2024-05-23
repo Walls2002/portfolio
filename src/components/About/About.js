@@ -15,33 +15,41 @@ function About() {
       <div className="Container">
         <div className="SectionTitle">About Me</div>
         <div className="BigCard">
-        <ScrollAnimation animateIn="fadeInLeft">
-          <Image
-            src="/man-svgrepo-com.svg"
-            alt="man-svgrepo"
-          />
-        </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInLeft">
+            <Image src="/man-svgrepo-com.svg" alt="man-svgrepo" />
+          </ScrollAnimation>
           <div className="AboutBio">
             <ScrollAnimation animateIn="fadeInLeft">
-            Hello! My name is <strong>Pedro Muniz</strong>. I'm originally from Brazil and have been living in Canada for the past three years. During my time here, I gained valuable experience through various entry-level positions, which greatly enhanced my work ethic, communication skills, and adaptability.
+              Hello! I'm <strong>Wally Gaynor</strong>. a passionate programmer
+              and proud graduate of Quezon City University Main with a Bachelor
+              of Science in Information Technology. Based in Quezon City,
+              Philippines, I have cultivated a strong foundation in various
+              programming languages and frameworks, which fuel my love for
+              technology and innovation.
             </ScrollAnimation>
 
-            <br /><br />
-            
+            <br />
+            <br />
+
             <ScrollAnimation animateIn="fadeInLeft">
-            My journey into the world of technology began with a strong passion for problem-solving, which led me to pursue the Computer Systems Technology program. Despite its challenges, I remained determined and forged lasting friendships that supported me throughout this demanding program.
-            Throughout my studies at BCIT, I had the opportunity to engage in fascinating projects. Notably, I contributed to the development of the RENR Safety App and MyMind, projects that garnered recognition from my colleagues, instructors, and clients alike.
+              With expertise in React.js, JavaScript, TypeScript, HTML, CSS, and
+              proficient use of Bootstrap and Tailwind CSS, I am adept at
+              creating dynamic and responsive web applications. My goal is to
+              ensure that my projects not only function seamlessly but also
+              boast appealing and user-friendly designs.
             </ScrollAnimation>
 
-            <br /><br />
+            <br />
+            <br />
 
             <ScrollAnimation animateIn="fadeInLeft">
-              Working collaboratively within a team towards a shared objective has been an incredibly rewarding and unique experience for me. I am eager to continue exploring exciting projects in the future, with a particular interest in web development and cross-platform mobile development.
+              Programming is not just a career for me; it's a passion. I thrive
+              on solving complex problems and continuously learning new
+              technologies to keep up with the ever-evolving tech landscape.
               <div className="tagline2">
                 I have become confident using the following technologies:
               </div>
             </ScrollAnimation>
-            
 
             <Technologies>
               {stackList.map((stack, index) => (
@@ -54,7 +62,6 @@ function About() {
               ))}
             </Technologies>
           </div>
-
         </div>
       </div>
     </ContactWrapper>
