@@ -16,8 +16,9 @@ function ProjectCard() {
         <div key={index}>
           <Card>
             <CardLeft>
-              <img src={list.img} alt={list.name} />
+              <img height={"100%"} src={list.img} alt={list.name} />
             </CardLeft>
+
             <CardRight>
               <h4>{list.title}</h4>
               <p>{list.description}</p>

@@ -1,49 +1,37 @@
 // --------------------------------------- Project List
 export const ProjectList = [
   {
-    img: "/ykte-feature-graphic.png",
-    title: "YouKnowTheEnding",
-    description:
-      "A cross-platform mobile game (in closed testing) where players try to find the missing pieces of a story.",
-    tech_stack: ["React Native", "Google Cloud", "NextJs", "TailwindCSS"],
-    github_url: "",
-    demo_url: "https://youknowtheending.net/",
+    img: "/freight.png",
+    title: "Freight Tracking and Management System for RRG Freight Services",
+    description: "An Inteligent monitoring system for freight forwarders.",
+    tech_stack: ["React", "TypeScript", "NextJs", "TailwindCSS"],
+    github_url: "https://github.com/Walls2002/rrg-freight-services-web",
+    demo_url: "https://www.rrgfreight.services/",
   },
   {
-    img: "/renr-responsive.png",
-    title: "RENR Safety App",
-    description:
-      "A safety application for the Renewable Resources Dept. of BCIT",
-    tech_stack: ["React", "Firebase"],
-    github_url: "",
-    demo_url: "https://renr-bcit.web.app/",
+    img: "/pos.png",
+    title: "DID's Store POS System",
+    description: "A simple Point of Sale System for local stores",
+    tech_stack: ["JQuery", "Bootstrap", "HTML", "CSS", "PHP"],
+    github_url: "https://github.com/Walls2002/POS",
+    demo_url: "",
   },
   {
-    img: "/mymind-responsive.png",
-    title: "MyMind",
-    description:
-      "An app where users can purchase online therapy sessions and chat with their therapists.",
-    tech_stack: ["HTML", "CSS", "NodeJs", "MongoDB", "SocketIo"],
-    github_url: "https://github.com/salesp07/MyMind---Copy",
-    demo_url: "https://mymindweb.vercel.app/",
+    img: "/attendance.png",
+    title: "Villager Montessori College Attendance Monitoring System",
+    description: "An attendance monitoring system using a barcode",
+    tech_stack: ["PHP", "HTML", "CSS", "JQuery"],
+    github_url: "https://github.com/Walls2002/attendance-monitoring",
+    demo_url: "",
   },
   {
-    img: "/pokedex-responsive.png",
-    title: "Pokedex",
+    img: "/website.png",
+    title: "University Student Portal",
     description:
-      "A pokedex app that displays pokemon data, plays OSTs and makes pokemons dance.",
-    tech_stack: ["ReactJs", "NodeJs", "MongoDB"],
-    github_url: "https://github.com/salesp07/Pokedex-ReactApp",
-    demo_url: "https://pokedex-salesp07.netlify.app/",
-  },
-  {
-    img: "/jobDetect.png",
-    title: "JobDetect",
-    description:
-      "An app to detect if a job posting is a scam or not using its description.",
-    tech_stack: ["Python", "Flask", "NodeJs", "MongoDB"],
-    github_url: "https://github.com/salesp07/JobDetectNode",
-    demo_url: "https://jobdetective.onrender.com/",
+      "A comprehensive university portal system designed to centralize all school-related information and resources for students.",
+    tech_stack: ["PHP", "HTML", "CSS", "JQuery"],
+    github_url: "https://github.com/Walls2002/university-website",
+    demo_url: "",
   },
 ];
 
@@ -116,5 +104,9 @@ export const stackList = [
   {
     img: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
     name: "PHP",
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg",
+    name: "jQuery",
   },
 ];
