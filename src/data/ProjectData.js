@@ -9,6 +9,15 @@ export const ProjectList = [
     demo_url: "https://www.rrgfreight.services/",
   },
   {
+    img: "/ohmyra.png",
+    title: "Ohmyra!",
+    description:
+      "Ohmyra is an anonymous chat app that lets you connect with strangers instantly—randomly or by shared interests. No sign-up, just real-time conversations.",
+    tech_stack: ["React", "TypeScript", "NextJs", "TailwindCSS", "Sockert.io"],
+    github_url: "https://github.com/Walls2002/ohmyra",
+    demo_url: "https://ohmyra.vercel.app/",
+  },
+  {
     img: "/pos.png",
     title: "DID's Store POS System",
     description: "A simple Point of Sale System for local stores",
