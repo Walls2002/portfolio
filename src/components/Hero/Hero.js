@@ -28,7 +28,7 @@ function Hero() {
       <HeroContainer>
         <HeroWrapper>
           <HeroLeft>
-            <ScrollAnimation animateIn="fadeIn">
+            <ScrollAnimation animateIn="fadeIn" animateOnce>
               <TypeAnimation
                 cursor={false}
                 sequence={["Hi, I'm Wally.", () => setShowSubtitle(true)]}
@@ -62,13 +62,13 @@ function Hero() {
             </ScrollAnimation>
           </HeroLeft>
           <HeroRight>
-            <ScrollAnimation animateIn="fadeIn">
+            <ScrollAnimation animateIn="fadeIn" animateOnce>
               <Image src="/man-svgrepo-com.svg" alt="man-svgrepo" />
             </ScrollAnimation>
           </HeroRight>
         </HeroWrapper>
         {showScrollDown && (
-          <ScrollAnimation animateIn="flipInX" offset={0}>
+          <ScrollAnimation animateIn="flipInX" animateOnce offset={0}>
             <ScrollDown to="projects" id="scrollDown">
               <ScrollLink>
                 Scroll down

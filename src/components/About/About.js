@@ -15,37 +15,39 @@ function About() {
       <div className="Container">
         <div className="SectionTitle">About Me</div>
         <div className="BigCard">
-          <ScrollAnimation animateIn="fadeInLeft">
+          <ScrollAnimation animateIn="fadeInLeft" animateOnce>
             <Image src="/man-svgrepo-com.svg" alt="man-svgrepo" />
           </ScrollAnimation>
           <div className="AboutBio">
-            <ScrollAnimation animateIn="fadeInLeft">
-              Hello! I'm <strong>Wally Gaynor</strong>. a passionate programmer
-              and proud graduate of Quezon City University Main with a Bachelor
-              of Science in Information Technology. Based in Quezon City,
-              Philippines, I have cultivated a strong foundation in various
-              programming languages and frameworks, which fuel my love for
-              technology and innovation.
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+              Hello! I'm <strong>Wally Gaynor</strong> a dedicated and
+              passionate software developer based in Quezon City, Philippines,
+              and a proud graduate of Quezon City University – Main Campus,
+              holding a Bachelor of Science in Information Technology.
             </ScrollAnimation>
 
             <br />
             <br />
 
-            <ScrollAnimation animateIn="fadeInLeft">
-              With expertise in React.js, PHP, JavaScript, TypeScript, HTML,
-              CSS, and proficient use of Bootstrap and Tailwind CSS, I am adept
-              at creating dynamic and responsive web applications. My goal is to
-              ensure that my projects not only function seamlessly but also
-              boast appealing and user-friendly designs.
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+              I have built a solid foundation in programming through both
+              academic training and hands-on development experience. My
+              technical skill set includes React.js, JavaScript, TypeScript,
+              PHP, Java (with a focus on Spring Boot), HTML, CSS, and back-end
+              technologies such as MySQL and Node.js. I am also highly
+              proficient in modern UI frameworks like Tailwind CSS and
+              Bootstrap, allowing me to design and develop responsive, visually
+              appealing, and user-friendly web applications.
             </ScrollAnimation>
 
             <br />
             <br />
 
-            <ScrollAnimation animateIn="fadeInLeft">
-              Programming is not just a career for me; it's a passion. I thrive
-              on solving complex problems and continuously learning new
-              technologies to keep up with the ever-evolving tech landscape.
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+              Programming is more than just a career for me—it's a passion. I
+              enjoy solving complex problems, optimizing performance, and
+              constantly exploring new tools and frameworks to stay at the
+              forefront of the ever-evolving tech industry.
               <div className="tagline2">
                 I have become confident using the following technologies:
               </div>
@@ -53,7 +55,7 @@ function About() {
 
             <Technologies>
               {stackList.map((stack, index) => (
-                <ScrollAnimation animateIn="fadeInLeft" key={index}>
+                <ScrollAnimation animateIn="fadeInLeft" animateOnce key={index}>
                   <Tech key={index} className="tech">
                     <TechImg src={stack.img} alt={stack.name} />
                     <TechName>{stack.name}</TechName>

@@ -14,6 +14,12 @@ const Header = ({ toggle }) => {
           <NavLink className="menu-item" to="about">
             About
           </NavLink>
+          <NavLink className="menu-item" to="experience">
+            Work Experience
+          </NavLink>
+          <NavLink className="menu-item" to="achievements">
+            Achievements
+          </NavLink>
           <NavLink className="menu-item" to="contact">
             Contact
           </NavLink>
@@ -21,7 +27,7 @@ const Header = ({ toggle }) => {
         <NavBtn>
           <a
             className="btn PrimaryBtn"
-            href="https://www.linkedin.com/in/wallie-gaynor-26b0a7223/"
+            href="https://drive.google.com/file/d/1BNRg5GCec7rxhy940AGdxfvlnMrT6qXQ/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

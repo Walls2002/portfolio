@@ -63,6 +63,10 @@ export const stackList = [
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
     name: "ReactJS",
   },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg",
+    name: "VueJS",
+  },
 
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
@@ -90,6 +94,10 @@ export const stackList = [
     name: "Java",
   },
   {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg",
+    name: "Spring",
+  },
+  {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
     name: "MySQL",
   },
@@ -103,7 +111,7 @@ export const stackList = [
     name: "Figma",
   },
   {
-    img: "https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original-wordmark.svg",
     name: "TailwindCSS",
   },
   {
