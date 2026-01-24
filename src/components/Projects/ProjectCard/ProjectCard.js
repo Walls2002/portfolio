@@ -12,7 +12,6 @@ import {
   ModalClose,
 } from "./ProjectCardElements";
 import ScrollAnimation from "react-animate-on-scroll";
-import { colors } from "@mui/material";
 import { blue } from "@mui/material/colors";
 function ProjectCard() {
   const [zoomSrc, setZoomSrc] = useState(null);
