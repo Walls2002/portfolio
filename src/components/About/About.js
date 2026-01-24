@@ -20,7 +20,7 @@ function About() {
           </ScrollAnimation>
           <div className="AboutBio">
             <ScrollAnimation animateIn="fadeInLeft" animateOnce>
-              Hello! I'm <strong>Wally Gaynor</strong> a dedicated and
+              Hello! I'm <strong>Wally Gaynor</strong>, a dedicated and
               passionate software developer based in Quezon City, Philippines,
               and a proud graduate of Quezon City University – Main Campus,
               holding a Bachelor of Science in Information Technology.
@@ -44,6 +44,16 @@ function About() {
             <br />
 
             <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+              In addition to custom web development, I also build and customize
+              websites using <strong>WordPress</strong> with{" "}
+              <strong>Elementor</strong>, creating flexible, easy-to-manage, and
+              performance-optimized sites tailored to client needs.
+            </ScrollAnimation>
+
+            <br />
+            <br />
+
+            <ScrollAnimation animateIn="fadeInLeft" animateOnce>
               Programming is more than just a career for me—it's a passion. I
               enjoy solving complex problems, optimizing performance, and
               constantly exploring new tools and frameworks to stay at the
@@ -56,7 +66,7 @@ function About() {
             <Technologies>
               {stackList.map((stack, index) => (
                 <ScrollAnimation animateIn="fadeInLeft" animateOnce key={index}>
-                  <Tech key={index} className="tech">
+                  <Tech className="tech">
                     <TechImg src={stack.img} alt={stack.name} />
                     <TechName>{stack.name}</TechName>
                   </Tech>

@@ -1,6 +1,33 @@
 // --------------------------------------- Project List
 export const ProjectList = [
   {
+    img: "/duraclad.png",
+    title: "Duraclad Constructions",
+    description:
+      "A WordPress website built for an Australian cladding solutions provider, showcasing product offerings and company information with a clean layout, responsive design, and clear call-to-action for quotes and enquiries",
+    tech_stack: ["WordPress", "Elementor", "PHP", "CSS"],
+    github_url: "",
+    demo_url: "https://duraclad.com.au/",
+  },
+  {
+    img: "/collings.png",
+    title: "Collings Real Estate",
+    description:
+      "A WordPress website developed for an Australian real estate firm, focused on presenting properties and services through a clean layout, intuitive navigation, and a fully responsive design.",
+    tech_stack: ["WordPress", "Elementor", "PHP", "CSS"],
+    github_url: "",
+    demo_url: "https://www.collings.com.au/",
+  },
+  {
+    img: "/rafahealth.png",
+    title: "Rafah Health",
+    description:
+      "A responsive WordPress website built for an Australian healthcare clinic, designed for clear service presentation, easy navigation, and patient accessibility.",
+    tech_stack: ["WordPress", "Elementor", "PHP", "CSS"],
+    github_url: "",
+    demo_url: "https://rafahhealth.com.au/",
+  },
+  {
     img: "/freight.png",
     title: "Freight Tracking and Management System for RRG Freight Services",
     description: "An Inteligent monitoring system for freight forwarders.",
@@ -9,7 +36,7 @@ export const ProjectList = [
     demo_url: "https://www.rrgfreight.services/",
   },
   {
-    img: "/ohmyra.png",
+    img: "/ohmyraNEW.png",
     title: "Ohmyra!",
     description:
       "Ohmyra is an anonymous chat app that lets you connect with strangers instantly—randomly or by shared interests. No sign-up, just real-time conversations.",
@@ -47,6 +74,14 @@ export const ProjectList = [
 // --------------------------------------- Skills
 
 export const stackList = [
+  {
+    img: "https://logo.svgcdn.com/logos/wordpress-icon.svg",
+    name: "WordPress",
+  },
+  {
+    img: "./elementor.svg",
+    name: "Elementor",
+  },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
     name: "HTML",
@@ -109,10 +144,6 @@ export const stackList = [
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg",
     name: "Figma",
-  },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original-wordmark.svg",
-    name: "TailwindCSS",
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",

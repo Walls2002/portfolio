@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ProjectList } from "../../../data/ProjectData";
 import {
   Card,
@@ -7,9 +7,23 @@ import {
   TechCardContainer,
   TechCard,
   BtnGroup,
+  ImageModal,
+  ModalImage,
+  ModalClose,
 } from "./ProjectCardElements";
 import ScrollAnimation from "react-animate-on-scroll";
+import { colors } from "@mui/material";
+import { blue } from "@mui/material/colors";
 function ProjectCard() {
+  const [zoomSrc, setZoomSrc] = useState(null);
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === "Escape") setZoomSrc(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
   return (
     <>
       {ProjectList.map((list, index) => (
@@ -17,7 +31,13 @@ function ProjectCard() {
           <div>
             <Card>
               <CardLeft>
-                <img height={"100%"} src={list.img} alt={list.name} />
+                <img
+                  height={"100%"}
+                  src={list.img}
+                  alt={list.name}
+                  style={{ cursor: "pointer" }}
+                  onClick={() => setZoomSrc(list.img)}
+                />
               </CardLeft>
 
               <CardRight>
@@ -25,7 +45,9 @@ function ProjectCard() {
                 <p>{list.description}</p>
                 <TechCardContainer>
                   {list.tech_stack.map((tech, index) => (
-                    <TechCard key={index}>{tech}</TechCard>
+                    <TechCard style={{ color: blue[500] }} key={index}>
+                      {tech}
+                    </TechCard>
                   ))}
                 </TechCardContainer>
                 <BtnGroup>
@@ -55,6 +77,19 @@ function ProjectCard() {
           </div>
         </ScrollAnimation>
       ))}
+
+      {zoomSrc && (
+        <ImageModal onClick={() => setZoomSrc(null)}>
+          <ModalImage
+            src={zoomSrc}
+            alt="zoomed"
+            onClick={(e) => e.stopPropagation()}
+          />
+          <ModalClose onClick={() => setZoomSrc(null)} aria-label="Close zoom">
+            ×
+          </ModalClose>
+        </ImageModal>
+      )}
     </>
   );
 }

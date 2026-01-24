@@ -8,7 +8,8 @@ export const Card = styled.div`
   padding-bottom: 2rem;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 5px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
@@ -82,4 +83,34 @@ export const TechCard = styled.div`
   color: rgba(0, 0, 0, 0.815);
   cursor: default;
   box-shadow: 0px 2px 5px rgba(160, 170, 180, 0.6);
+`;
+
+export const ImageModal = styled.div`
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+`;
+
+export const ModalImage = styled.img`
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+`;
+
+export const ModalClose = styled.button`
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
 `;
