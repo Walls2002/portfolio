@@ -1,6 +1,15 @@
 // --------------------------------------- Project List
 export const ProjectList = [
   {
+    img: "/duraglaze.png",
+    title: "Duraglaze Constructions",
+    description:
+      "A WordPress website built for an Australian dust and fume extraction company, showcasing their industrial solutions, services, and expertise with a clean layout, responsive design, and clear call-to-action for enquiries.",
+    tech_stack: ["WordPress", "Elementor", "PHP", "CSS"],
+    github_url: "",
+    demo_url: "https://durablesystems.com.au/",
+  },
+  {
     img: "/duraclad.png",
     title: "Duraclad Constructions",
     description:
