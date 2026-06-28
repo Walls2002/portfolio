@@ -1,5 +1,23 @@
 // --------------------------------------- Project List
 export const ProjectList = [
+   {
+    img: "/portal.png",
+    title: "Collings Portal",
+    description:
+      "A buyer-facing platform to browse listings, save portfolios, and set buying preferences, powered by live property data. The two are integrated, so agent updates in the CRM flow through to the buyer's Portal experience.",
+    tech_stack: ["React", "Tailwind", "Django", "PostgreSQL"],
+    github_url: "",
+    demo_url: "https://portal.collings.com.au/",
+  },
+   {
+    img: "/crm.png",
+    title: "Collings CRM",
+    description:
+      "An internal tool for agents to manage buyers and leads, score buyer intent, prioritize calls, and view analytics like cost per lead and suburb market intelligence.",
+    tech_stack: ["React", "Tailwind", "Django", "PostgreSQL"],
+    github_url: "",
+    demo_url: "https://crm.collings.com.au/",
+  },
   {
     img: "/duraglaze.png",
     title: "Duraglaze Constructions",
