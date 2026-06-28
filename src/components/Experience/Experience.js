@@ -23,7 +23,7 @@ function Experience() {
       company: "Apollo Software Corp.",
       position: "Full Stack Developer",
       location: "Makati City, Philippines",
-      duration: "2024 - Present",
+      duration: "2024 - 2026",
       description:
         "Developed and maintained a comprehensive freight tracking and management system, improving operational efficiency and customer satisfaction.",
       achievements: [
