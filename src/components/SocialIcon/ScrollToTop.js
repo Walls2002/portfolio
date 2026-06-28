@@ -12,10 +12,9 @@ const StyledIconButton = styled(IconButton)`
 `
 
 const StyledArrowIcon = styled(MdKeyboardArrowUp)`
-    background-color: #007bff;
-    border-radius: 50%;
+    background-color: #1a1813;
+    border-radius: 2px;
     padding: 5px;
-    box-shadow: 0px 4px 20px rgba(160, 170, 180, 0.6);
 `
 
 function ScrollToTop() {

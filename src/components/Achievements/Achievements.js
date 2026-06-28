@@ -55,7 +55,13 @@ function Achievements() {
   return (
     <AchievementsWrapper id="achievements">
       <div className="Container">
-        <div className="SectionTitle">Achievements & Milestones</div>
+        <div
+          className="SectionTitle"
+          data-num="04"
+          data-kicker="Milestones"
+        >
+          Achievements &amp; Milestones
+        </div>
 
         {/* Stats Section */}
         <ScrollAnimation animateIn="fadeInLeft" animateOnce>
@@ -79,7 +85,9 @@ function Achievements() {
               animateOnce
             >
               <AchievementCard>
-                <AchievementIcon>{achievement.icon}</AchievementIcon>
+                <AchievementIcon>
+                  {String(index + 1).padStart(2, "0")}
+                </AchievementIcon>
                 <AchievementContent>
                   <AchievementTitle>{achievement.title}</AchievementTitle>
                   <AchievementDate>{achievement.date}</AchievementDate>

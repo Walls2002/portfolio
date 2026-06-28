@@ -1,11 +1,13 @@
 import React from "react";
-import { Nav, NavLink, Bars, NavMenu, NavBtn } from "./HeaderElements";
+import { Nav, NavLink, Logo, Bars, NavMenu, NavBtn } from "./HeaderElements";
 
 const Header = ({ toggle }) => {
   return (
     <div className="Container" style={{ padding: 0 }}>
       <Nav>
-        <img src="/logo.png" alt="logo" width={90} />
+        <Logo>
+          <img src="/logo.png" alt="Wally Gaynor logo" width={90} />
+        </Logo>
 
         <NavMenu>
           <NavLink className="menu-item" to="projects">

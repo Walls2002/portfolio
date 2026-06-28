@@ -6,6 +6,7 @@ import {
   HeroWrapper,
   HeroLeft,
   HeroRight,
+  Available,
   Image,
   ScrollDown,
   ScrollLink,
@@ -26,6 +27,10 @@ function Hero() {
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
       <HeroContainer>
+        <Available>
+          <span className="dot" />
+          Available for work — Quezon City, PH
+        </Available>
         <HeroWrapper>
           <HeroLeft>
             <ScrollAnimation animateIn="fadeIn" animateOnce>
@@ -59,11 +64,15 @@ function Hero() {
                   repeat={Infinity}
                 />
               )}
+              <p>
+                I design and build responsive, performance-minded web
+                applications from front-end interface to back-end system.
+              </p>
             </ScrollAnimation>
           </HeroLeft>
           <HeroRight>
             <ScrollAnimation animateIn="fadeIn" animateOnce>
-              <Image src="/man-svgrepo-com.svg" alt="man-svgrepo" />
+              <Image src="/man-svgrepo-com.svg" alt="Illustration of Wally" />
             </ScrollAnimation>
           </HeroRight>
         </HeroWrapper>

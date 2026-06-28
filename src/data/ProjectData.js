@@ -19,6 +19,15 @@ export const ProjectList = [
     demo_url: "https://crm.collings.com.au/",
   },
   {
+    img: "/spotless-clean.png",
+    title: "Spotless Clean",
+    description:
+      "A WordPress website built for an Australian cleaning company, showcasing their services, testimonials, and expertise with a clean layout, responsive design, and clear call-to-action for enquiries.",
+    tech_stack: ["WordPress", "Elementor", "PHP", "CSS"],
+    github_url: "",
+    demo_url: "https://spotlesscleaninggroup.com.au/",
+  },
+  {
     img: "/duraglaze.png",
     title: "Duraglaze Constructions",
     description:
@@ -185,3 +194,31 @@ export const stackList = [
     name: "jQuery",
   },
 ];
+
+// --------------------------------------- Tech logos (rendered in grayscale)
+const DEVICON =
+  "https://raw.githubusercontent.com/devicons/devicon/master/icons";
+
+const techLogos = {
+  react: `${DEVICON}/react/react-original.svg`,
+  tailwind: `${DEVICON}/tailwindcss/tailwindcss-original.svg`,
+  tailwindcss: `${DEVICON}/tailwindcss/tailwindcss-original.svg`,
+  django: `${DEVICON}/django/django-plain.svg`,
+  postgresql: `${DEVICON}/postgresql/postgresql-original.svg`,
+  wordpress: `${DEVICON}/wordpress/wordpress-plain.svg`,
+  elementor: "/elementor.svg",
+  php: `${DEVICON}/php/php-original.svg`,
+  css: `${DEVICON}/css3/css3-original.svg`,
+  html: `${DEVICON}/html5/html5-original.svg`,
+  typescript: `${DEVICON}/typescript/typescript-original.svg`,
+  nextjs: `${DEVICON}/nextjs/nextjs-original.svg`,
+  socketio: `${DEVICON}/socketio/socketio-original.svg`,
+  bootstrap: `${DEVICON}/bootstrap/bootstrap-original.svg`,
+  jquery: `${DEVICON}/jquery/jquery-original.svg`,
+};
+
+// Map a tech_stack label (e.g. "TailwindCSS", "Sockert.io") to a logo URL.
+export const getTechLogo = (name) => {
+  const key = name.toLowerCase().replace(/[^a-z0-9]/g, "");
+  return techLogos[key] || techLogos[key.replace(/js$/, "")] || null;
+};

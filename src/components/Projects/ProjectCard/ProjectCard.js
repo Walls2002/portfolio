@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { ProjectList } from "../../../data/ProjectData";
+import { ProjectList, getTechLogo } from "../../../data/ProjectData";
 import {
   Card,
+  CardIndex,
   CardLeft,
   CardRight,
   TechCardContainer,
   TechCard,
+  TechLogo,
   BtnGroup,
   ImageModal,
   ModalImage,
   ModalClose,
 } from "./ProjectCardElements";
 import ScrollAnimation from "react-animate-on-scroll";
-import { blue } from "@mui/material/colors";
 function ProjectCard() {
   const [zoomSrc, setZoomSrc] = useState(null);
 
@@ -40,14 +41,21 @@ function ProjectCard() {
               </CardLeft>
 
               <CardRight>
+                <CardIndex>
+                  {String(index + 1).padStart(2, "0")} / Project
+                </CardIndex>
                 <h4>{list.title}</h4>
                 <p>{list.description}</p>
                 <TechCardContainer>
-                  {list.tech_stack.map((tech, index) => (
-                    <TechCard style={{ color: blue[500] }} key={index}>
-                      {tech}
-                    </TechCard>
-                  ))}
+                  {list.tech_stack.map((tech, i) => {
+                    const logo = getTechLogo(tech);
+                    return (
+                      <TechCard key={i}>
+                        {logo && <TechLogo src={logo} alt={tech} />}
+                        {tech}
+                      </TechCard>
+                    );
+                  })}
                 </TechCardContainer>
                 <BtnGroup>
                   {list.github_url.length > 0 && (

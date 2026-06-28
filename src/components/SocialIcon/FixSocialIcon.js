@@ -18,10 +18,10 @@ const SocialContainer = styled.div`
   }
 
   a {
-    font-size: 2.3rem;
-    color: rgb(119, 119, 121);
+    font-size: 2rem;
+    color: var(--ink-soft);
     &:hover {
-      color: rgb(57, 134, 250);
+      color: var(--accent);
     }
   }
 
@@ -38,10 +38,10 @@ const SocialContainer = styled.div`
     }
 
     a {
-      font-size: 2.5rem;
-      color: #151418;
+      font-size: 2.3rem;
+      color: var(--ink);
       &:hover {
-        color: rgb(57, 134, 250);
+        color: var(--accent);
       }
     }
 

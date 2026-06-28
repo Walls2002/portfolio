@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 
 export const Nav = styled.nav`
   background: transparent;
-  height: 100px;
+  height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,27 +12,54 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(ScrollLink)`
-  color: rgb(119, 119, 121);
+  position: relative;
+  color: var(--ink-soft);
   display: flex;
-  font-size: 1.2rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   align-items: center;
   height: 100%;
   cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width 0.25s ease;
+  }
+
   &:hover {
-    color: #f6f6f6;
+    color: var(--ink);
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 `;
-export const Logo = styled('div')`
+
+export const Logo = styled("div")`
+  display: inline-flex;
+  align-items: center;
+
   img {
-    width: 47px;
-    height: 47px;
+    width: 90px;
+    height: auto;
+    display: block;
+    /* logo file is solid white; recolor to ink so it reads on the light header */
+    filter: brightness(0);
   }
 `;
 
 export const Bars = styled(FaBars)`
   display: none;
-  color: #fff;
-  font-size: 1.8rem;
+  color: var(--ink);
+  font-size: 1.5rem;
   cursor: pointer;
   @media screen and (max-width: 768px) {
     display: block;
@@ -45,7 +72,7 @@ export const NavMenu = styled.div`
   margin-right: -24px;
 
   .menu-item + .menu-item {
-    margin-left: 1rem;
+    margin-left: 1.75rem;
   }
   @media screen and (max-width: 768px) {
     display: none;

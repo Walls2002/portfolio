@@ -8,7 +8,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 function Contact() {
   const [showTooltip, setShowTooltip] = useState(false);
   const copyToClipboard = () => {
-    navigator.clipboard.writeText("pedro.sales.muniz@gmail.com");
+    navigator.clipboard.writeText("walliegaynor29@gmail.com");
     setShowTooltip(true);
     setTimeout(() => {
       setShowTooltip(false);
@@ -18,7 +18,9 @@ function Contact() {
   return (
     <ContactWrapper id="contact">
       <div className="Container">
-        <div className="SectionTitle">Get In Touch</div>
+        <div className="SectionTitle" data-num="05" data-kicker="Contact">
+          Get In Touch
+        </div>
         <ScrollAnimation animateIn="fadeIn" animateOnce>
           <div className="BigCard">
             <Email>

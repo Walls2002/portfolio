@@ -12,11 +12,15 @@ export const ExperienceContainer = styled.div`
 `;
 
 export const ExperienceCard = styled.div`
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2.25rem;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: var(--line-strong);
+  }
 
   @media screen and (max-width: 768px) {
     padding: 1.5rem;
@@ -37,39 +41,43 @@ export const CompanyDetails = styled.div`
 `;
 
 export const CompanyName = styled.h3`
-  font-size: 1.4rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
   font-weight: 600;
-  color: #151418;
+  letter-spacing: -0.02em;
+  color: var(--ink);
   margin-bottom: 0.25rem;
 `;
 
 export const JobTitle = styled.h4`
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 500;
-  color: rgb(57, 134, 250);
+  color: var(--accent);
   margin-bottom: 0.5rem;
 `;
 
 export const Location = styled.p`
   font-size: 0.9rem;
-  color: #666;
+  color: var(--ink-soft);
   margin-bottom: 0.5rem;
 `;
 
 export const Duration = styled.div`
-  background: rgba(0, 0, 0, 1);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  background: transparent;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.9rem;
+  border-radius: 2px;
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
   white-space: nowrap;
   align-self: flex-start;
 `;
 
 export const Description = styled.div`
-  color: #333;
-  line-height: 1.6;
+  color: var(--ink-soft);
+  line-height: 1.7;
   margin-bottom: 1.5rem;
 
   p {

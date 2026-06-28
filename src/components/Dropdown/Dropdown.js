@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import { Link as ScrollLink } from "react-scroll";
 
 const SiderBar = styled.div`
-  background: #151418;
+  background: var(--ink);
   position: fixed;
   height: 100%;
   width: 100%;
@@ -40,12 +40,15 @@ export const NavMenu = styled.div`
 `;
 
 export const NavLink = styled(ScrollLink)`
-  color: #fff;
+  color: var(--paper);
   cursor: pointer;
-  font-size: 1.7rem;
+  font-family: "Space Mono", monospace;
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
   &:hover {
-    color: rgb(119, 119, 121);
+    color: var(--accent);
   }
 `;
 
@@ -78,6 +81,20 @@ function Dropdown({ isOpen, toggle }) {
         <NavLink
           onClick={toggle}
           className="menu-item"
+          to="experience"
+        >
+          Experience
+        </NavLink>
+        <NavLink
+          onClick={toggle}
+          className="menu-item"
+          to="achievements"
+        >
+          Achievements
+        </NavLink>
+        <NavLink
+          onClick={toggle}
+          className="menu-item"
           to="contact"
         >
           Contact
@@ -86,7 +103,12 @@ function Dropdown({ isOpen, toggle }) {
       <NavBtn onClick={toggle}>
         <a
           className="btn PrimaryBtn"
-          href="https://linkedin.com/in/pedro-sales-muniz"
+          style={{
+            background: "var(--accent)",
+            borderColor: "var(--accent)",
+            color: "#fff",
+          }}
+          href="https://drive.google.com/file/d/1gWQNfVxt3AatntBce0waDwL_HIZwPeQv/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

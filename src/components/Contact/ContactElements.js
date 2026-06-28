@@ -13,18 +13,21 @@ export const Email = styled.div`
   row-gap: 1rem;
 
   span {
-    font-size: 1rem;
-    font-weight: 400;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
   }
 
   @media (min-width: 576px) {
     span {
-      font-size: 1.25rem;
+      font-size: 1.4rem;
     }
   }
   @media (min-width: 992px) {
     span {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
   }
 `;

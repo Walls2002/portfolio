@@ -2,8 +2,10 @@ import styled from "@emotion/styled";
 
 export const AchievementsWrapper = styled.div`
   margin-top: 5rem;
-  background: #fafaff;
-  padding: 3rem 0;
+  background: var(--paper-2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 4rem 0;
 `;
 
 export const AchievementsContainer = styled.div`
@@ -14,40 +16,43 @@ export const AchievementsContainer = styled.div`
 `;
 
 export const AchievementCard = styled.div`
-  background: #ffffff;
-  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
   padding: 2rem;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  transition: border-color 0.3s ease;
 
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1.75rem;
+
+  &:hover {
+    border-color: var(--line-strong);
+  }
 
   @media screen and (max-width: 768px) {
     padding: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
+    gap: 1.25rem;
   }
 `;
 
 export const AchievementIcon = styled.div`
-  font-size: 3rem;
-  min-width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgb(57, 134, 250), rgb(87, 164, 255));
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  min-width: 56px;
+  height: 56px;
+  border-radius: 2px;
+  border: 1px solid var(--line-strong);
+  color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 4px 15px rgba(57, 134, 250, 0.3);
 
   @media screen and (max-width: 768px) {
-    min-width: 60px;
-    height: 60px;
-    font-size: 2rem;
-    margin: 0 auto;
+    min-width: 46px;
+    height: 46px;
+    font-size: 0.85rem;
   }
 `;
 
@@ -56,9 +61,11 @@ export const AchievementContent = styled.div`
 `;
 
 export const AchievementTitle = styled.h3`
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
-  color: #151418;
+  letter-spacing: -0.02em;
+  color: var(--ink);
   margin-bottom: 0.5rem;
   line-height: 1.3;
 
@@ -68,16 +75,17 @@ export const AchievementTitle = styled.h3`
 `;
 
 export const AchievementDate = styled.div`
-  font-size: 0.9rem;
-  color: rgb(57, 134, 250);
-  font-weight: 500;
+  font-family: "Space Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
   margin-bottom: 1rem;
 `;
 
 export const AchievementDescription = styled.p`
   font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
+  color: var(--ink-soft);
+  line-height: 1.7;
   margin: 0;
 
   @media screen and (max-width: 768px) {
@@ -102,12 +110,16 @@ export const StatsContainer = styled.div`
 `;
 
 export const StatCard = styled.div`
-  background: #ffffff;
-  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
   padding: 2rem;
-  text-align: center;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  text-align: left;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: var(--accent);
+  }
 
   @media screen and (max-width: 768px) {
     padding: 1.5rem;
@@ -115,25 +127,27 @@ export const StatCard = styled.div`
 `;
 
 export const StatNumber = styled.div`
-  font-size: 2.5rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.75rem;
   font-weight: 700;
-  color: rgba(1, 86, 212, 1);
+  letter-spacing: -0.03em;
+  color: var(--ink);
   margin-bottom: 0.5rem;
   line-height: 1;
 
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 `;
 
 export const StatLabel = styled.div`
-  font-size: 1rem;
-  color: #666;
-  font-weight: 500;
+  font-family: "Space Mono", monospace;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.12em;
 
   @media screen and (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 `;

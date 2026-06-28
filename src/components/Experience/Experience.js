@@ -70,7 +70,9 @@ function Experience() {
   return (
     <ExperienceWrapper id="experience">
       <div className="Container">
-        <div className="SectionTitle">Work Experience</div>
+        <div className="SectionTitle" data-num="03" data-kicker="Career">
+          Work Experience
+        </div>
         <ExperienceContainer>
           {experienceData.map((exp, index) => (
             <ScrollAnimation

@@ -5,9 +5,10 @@ export const ContactWrapper = styled.div`
 `;
 
 export const Image = styled.img`
-  max-width: 120px;
+  max-width: 140px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  margin-bottom: 1rem;
 `;
 
 export const Technologies = styled.div`
@@ -35,5 +36,8 @@ export const TechImg = styled.img`
 `;
 
 export const TechName = styled.div`
-  font-size: 14px;
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: var(--ink-soft);
 `;
